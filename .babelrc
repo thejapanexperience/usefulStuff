@@ -1,0 +1,22 @@
+{
+  "presets": [ "@babel/preset-env", "@babel/preset-react", "@babel/preset-flow" ],
+  "plugins": [
+    "@babel/plugin-transform-modules-commonjs",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-function-bind",
+    "@babel/plugin-proposal-export-namespace-from",
+    "@babel/plugin-proposal-export-default-from",
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-transform-runtime",
+    [
+      "module-resolver", {
+      "root": ["."],
+      "alias": {
+        "app": "./src",
+        "src": "./src",
+        "stilo-toolbox/src": "./node_modules/@phg/stilo-toolbox"
+      }
+    }]
+  ]
+}
+
